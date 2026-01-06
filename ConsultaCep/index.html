@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta CEP e Mapa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Consultar Endereço</h2>
+
+    <div class="input-group">
+        <input type="text" id="cepInput" placeholder="Digite o CEP (apenas números)" maxlength="8">
+        <button id="btnConsultar">Consultar</button>
+    </div>
+
+    <div id="errorMsg" class="error hidden"></div>
+
+    <div id="resultContainer" class="hidden">
+        <div class="result-box">
+            <p><strong>Endereço:</strong> <span id="resLogradouro"></span></p>
+            <p><strong>Bairro:</strong> <span id="resBairro"></span></p>
+            <p><strong>Cidade:</strong> <span id="resCidade"></span></p>
+            <p><strong>Estado:</strong> <span id="resEstado"></span></p>
+            <p><strong>Latitude:</strong> <span id="resLat"></span></p>
+            <p><strong>Longitude:</strong> <span id="resLng"></span></p>
+        </div>
+
+        <button id="btnMap">Exibir mapa</button>
+        
+        <div id="mapContainer" class="hidden">
+            </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

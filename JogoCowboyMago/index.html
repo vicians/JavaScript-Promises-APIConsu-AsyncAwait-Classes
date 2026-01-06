@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herança: Avatar, Cowboy e Mago</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h2>Seleção de Personagem</h2>
+    
+    <div class="character-select">
+        <select id="charType">
+            <option value="avatar">Avatar Comum</option>
+            <option value="cowboy">Cowboy</option>
+            <option value="mago">Mago</option>
+        </select>
+        <button id="btnStartGame">Iniciar Jogo</button>
+    </div>
+
+    <hr>
+
+    <div id="gameArea" class="hidden">
+        <div class="stats-board">
+            <div class="stat-item">❤️ Vida: <span id="displayHp"></span></div>
+            <div class="stat-item">💰 Moedas: <span id="displayCoins"></span></div>
+            <div class="stat-item">⚔️ Dano: <span id="displayDmg"></span></div>
+            
+            <div id="statAmmo" class="stat-item hidden">🔫 Munição: <span id="displayAmmo"></span></div>
+            <div id="statSpells" class="stat-item hidden">✨ Feitiços: <span id="displaySpells"></span></div>
+            
+            <div class="stat-item">📍 Pos: <span id="displayPos"></span></div>
+        </div>
+
+        <div class="grid-area">
+            <div id="avatarPiece" class="avatar-piece"></div>
+        </div>
+
+        <div class="controls">
+            <div class="movement">
+                <button id="btnForward">⬆️</button>
+                <div class="horizontal">
+                    <button id="btnLeft">⬅️</button>
+                    <button id="btnRight">➡️</button>
+                </div>
+                <button id="btnBack">⬇️</button>
+            </div>
+
+            <div class="actions">
+                <button id="btnCoin" class="btn-action coin">💰 Moeda</button>
+                <button id="btnAttack" class="btn-action attack">⚔️ Atacar</button>
+                <button id="btnDamage" class="btn-action damage">💔 Levar Dano</button>
+                
+                <button id="btnAddAmmo" class="btn-action ammo hidden">🔫 +Munição</button>
+            </div>
+        </div>
+
+        <div id="log" class="console-log">Selecione um personagem para começar.</div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
