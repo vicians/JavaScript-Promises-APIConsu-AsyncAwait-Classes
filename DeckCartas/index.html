@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck of Cards - Async/Await</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Desafio das Cartas</h2>
+    <p>Clique abaixo para embaralhar um novo deck e tirar 5 cartas sequencialmente.</p>
+    
+    <button id="btnStart">Embaralhar e Sacar</button>
+    
+    <div id="loading" class="hidden">Manipulando o baralho...</div>
+    <div id="errorMsg" class="hidden error"></div>
+
+    <div id="cardsContainer" class="cards-grid"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
